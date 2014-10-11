@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>7C46C5C8-F8A1-4D56-99BB-B8C8A37EEE8F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Matchy Matchy</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>72D1920DCC783BF0C4EDE57D7C195810FF5F0CB0</key>
+		<string>https://mac.local/git/Matchy%2520Matchy.git</string>
+		<key>BB9BC37F-4F0E-46C3-BBDE-5494F76B5443</key>
+		<string>https://mac.local/git/Matchy%20Matchy.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Matchy Matchy.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>72D1920DCC783BF0C4EDE57D7C195810FF5F0CB0</key>
+		<string>../..</string>
+		<key>BB9BC37F-4F0E-46C3-BBDE-5494F76B5443</key>
+		<string>../../../Matchy Matchy</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://mac.local/git/Matchy%2520Matchy.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>72D1920DCC783BF0C4EDE57D7C195810FF5F0CB0</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>BB9BC37F-4F0E-46C3-BBDE-5494F76B5443</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Matchy Matchy</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>72D1920DCC783BF0C4EDE57D7C195810FF5F0CB0</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Matchy%20Matchy</string>
+		</dict>
+	</array>
+</dict>
+</plist>

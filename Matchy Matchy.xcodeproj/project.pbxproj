@@ -1,0 +1,707 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		532DC089192B034C0080FF6D /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 532DC088192B034C0080FF6D /* StoreKit.framework */; };
+		532DC08F192C44C00080FF6D /* AEProductsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 532DC08E192C44C00080FF6D /* AEProductsManager.m */; };
+		532DC092192C456F0080FF6D /* AEPaymentManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 532DC091192C456F0080FF6D /* AEPaymentManager.m */; };
+		532DC095192D61A40080FF6D /* AEDefaultsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 532DC094192D61A40080FF6D /* AEDefaultsManager.m */; };
+		532DC098192D64A40080FF6D /* AEConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 532DC097192D64A40080FF6D /* AEConfig.m */; };
+		53551800190FF9AB00D73EFB /* AEGraphicNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 535517FF190FF9AB00D73EFB /* AEGraphicNode.m */; };
+		5364A784190168AF00740203 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5364A783190168AF00740203 /* Foundation.framework */; };
+		5364A786190168AF00740203 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5364A785190168AF00740203 /* CoreGraphics.framework */; };
+		5364A788190168AF00740203 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5364A787190168AF00740203 /* UIKit.framework */; };
+		5364A78A190168AF00740203 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5364A789190168AF00740203 /* SpriteKit.framework */; };
+		5364A790190168AF00740203 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5364A78E190168AF00740203 /* InfoPlist.strings */; };
+		5364A792190168AF00740203 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5364A791190168AF00740203 /* main.m */; };
+		5364A796190168AF00740203 /* AEAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5364A795190168AF00740203 /* AEAppDelegate.m */; };
+		5364A799190168AF00740203 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5364A797190168AF00740203 /* Main.storyboard */; };
+		5364A79C190168AF00740203 /* AEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5364A79B190168AF00740203 /* AEViewController.m */; };
+		5364A7A3190168AF00740203 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5364A7A2190168AF00740203 /* Images.xcassets */; };
+		5364A7AA190168AF00740203 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5364A7A9190168AF00740203 /* XCTest.framework */; };
+		5364A7AB190168AF00740203 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5364A783190168AF00740203 /* Foundation.framework */; };
+		5364A7AC190168AF00740203 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5364A787190168AF00740203 /* UIKit.framework */; };
+		5364A7B4190168AF00740203 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5364A7B2190168AF00740203 /* InfoPlist.strings */; };
+		5364A7C01901691000740203 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5364A7BF1901691000740203 /* GameKit.framework */; };
+		5364A7C21901695D00740203 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5364A7C11901695D00740203 /* iAd.framework */; };
+		5364A7CF19016A2800740203 /* AERandomHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5364A7C619016A2800740203 /* AERandomHelper.m */; };
+		5364A7D019016A2800740203 /* AEConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 5364A7C819016A2800740203 /* AEConstants.m */; };
+		5364A7D119016A2800740203 /* AEFeedbackGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5364A7CA19016A2800740203 /* AEFeedbackGenerator.m */; };
+		5364A7D219016A2800740203 /* AEBackgroundMusicPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5364A7CC19016A2800740203 /* AEBackgroundMusicPlayer.m */; };
+		5364A7D319016A2800740203 /* AELevelHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5364A7CE19016A2800740203 /* AELevelHelper.m */; };
+		5364A7DB19016A6600740203 /* AEGameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 5364A7D619016A6600740203 /* AEGameScene.m */; };
+		5364A7DC19016A6600740203 /* AEStartScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 5364A7D819016A6600740203 /* AEStartScene.m */; };
+		5364A7DD19016A6600740203 /* AEScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 5364A7DA19016A6600740203 /* AEScene.m */; };
+		5364A7EB19016AA000740203 /* AEWheel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5364A7E019016AA000740203 /* AEWheel.m */; };
+		5364A7EC19016AA000740203 /* AERing.m in Sources */ = {isa = PBXBuildFile; fileRef = 5364A7E219016AA000740203 /* AERing.m */; };
+		5364A7ED19016AA000740203 /* AEHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5364A7E419016AA000740203 /* AEHistory.m */; };
+		5364A7EE19016AA000740203 /* AEHistoryItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5364A7E619016AA000740203 /* AEHistoryItem.m */; };
+		5364A7EF19016AA000740203 /* AEScore.m in Sources */ = {isa = PBXBuildFile; fileRef = 5364A7E819016AA000740203 /* AEScore.m */; };
+		5364A7F019016AA000740203 /* AEScoreBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 5364A7EA19016AA000740203 /* AEScoreBar.m */; };
+		5364A7F619016F9700740203 /* blop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5364A7F119016F9700740203 /* blop.mp3 */; };
+		5364A7F719016F9700740203 /* correct.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5364A7F219016F9700740203 /* correct.mp3 */; };
+		5364A7F819016F9700740203 /* tick.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5364A7F319016F9700740203 /* tick.mp3 */; };
+		5364A7F919016F9700740203 /* wrong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5364A7F419016F9700740203 /* wrong.mp3 */; };
+		5364A7FA19016F9700740203 /* adrenaline.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5364A7F519016F9700740203 /* adrenaline.mp3 */; };
+		5364A7FD19016FB000740203 /* pieces.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 5364A7FC19016FB000740203 /* pieces.atlas */; };
+		53C0966F1909909300920640 /* AEFeedback.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C0966E1909909300920640 /* AEFeedback.m */; };
+		53C09671190D4DA700920640 /* AELevelHelperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C09670190D4DA700920640 /* AELevelHelperTests.m */; };
+		53F98A82190DCCAD005B1242 /* AETextBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F98A81190DCCAD005B1242 /* AETextBlock.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5364A7AD190168AF00740203 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5364A778190168AF00740203 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5364A77F190168AF00740203;
+			remoteInfo = "Matchy Matchy";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		532DC088192B034C0080FF6D /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		532DC08D192C44C00080FF6D /* AEProductsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEProductsManager.h; sourceTree = "<group>"; };
+		532DC08E192C44C00080FF6D /* AEProductsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEProductsManager.m; sourceTree = "<group>"; };
+		532DC090192C456F0080FF6D /* AEPaymentManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEPaymentManager.h; sourceTree = "<group>"; };
+		532DC091192C456F0080FF6D /* AEPaymentManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEPaymentManager.m; sourceTree = "<group>"; };
+		532DC093192D61A40080FF6D /* AEDefaultsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEDefaultsManager.h; sourceTree = "<group>"; };
+		532DC094192D61A40080FF6D /* AEDefaultsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEDefaultsManager.m; sourceTree = "<group>"; };
+		532DC096192D64A40080FF6D /* AEConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEConfig.h; sourceTree = "<group>"; };
+		532DC097192D64A40080FF6D /* AEConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEConfig.m; sourceTree = "<group>"; };
+		535517FE190FF9AB00D73EFB /* AEGraphicNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEGraphicNode.h; sourceTree = "<group>"; };
+		535517FF190FF9AB00D73EFB /* AEGraphicNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEGraphicNode.m; sourceTree = "<group>"; };
+		5364A780190168AF00740203 /* Matchy Matchy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Matchy Matchy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5364A783190168AF00740203 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5364A785190168AF00740203 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5364A787190168AF00740203 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5364A789190168AF00740203 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		5364A78D190168AF00740203 /* Matchy Matchy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Matchy Matchy-Info.plist"; sourceTree = "<group>"; };
+		5364A78F190168AF00740203 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5364A791190168AF00740203 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5364A793190168AF00740203 /* Matchy Matchy-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Matchy Matchy-Prefix.pch"; sourceTree = "<group>"; };
+		5364A794190168AF00740203 /* AEAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AEAppDelegate.h; sourceTree = "<group>"; };
+		5364A795190168AF00740203 /* AEAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AEAppDelegate.m; sourceTree = "<group>"; };
+		5364A798190168AF00740203 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5364A79A190168AF00740203 /* AEViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AEViewController.h; sourceTree = "<group>"; };
+		5364A79B190168AF00740203 /* AEViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AEViewController.m; sourceTree = "<group>"; };
+		5364A7A2190168AF00740203 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5364A7A8190168AF00740203 /* Matchy MatchyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Matchy MatchyTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5364A7A9190168AF00740203 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		5364A7B1190168AF00740203 /* Matchy MatchyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Matchy MatchyTests-Info.plist"; sourceTree = "<group>"; };
+		5364A7B3190168AF00740203 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5364A7BF1901691000740203 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		5364A7C11901695D00740203 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		5364A7C519016A2800740203 /* AERandomHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AERandomHelper.h; sourceTree = "<group>"; };
+		5364A7C619016A2800740203 /* AERandomHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AERandomHelper.m; sourceTree = "<group>"; };
+		5364A7C719016A2800740203 /* AEConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEConstants.h; sourceTree = "<group>"; };
+		5364A7C819016A2800740203 /* AEConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEConstants.m; sourceTree = "<group>"; };
+		5364A7C919016A2800740203 /* AEFeedbackGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEFeedbackGenerator.h; sourceTree = "<group>"; };
+		5364A7CA19016A2800740203 /* AEFeedbackGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEFeedbackGenerator.m; sourceTree = "<group>"; };
+		5364A7CB19016A2800740203 /* AEBackgroundMusicPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEBackgroundMusicPlayer.h; sourceTree = "<group>"; };
+		5364A7CC19016A2800740203 /* AEBackgroundMusicPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEBackgroundMusicPlayer.m; sourceTree = "<group>"; };
+		5364A7CD19016A2800740203 /* AELevelHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AELevelHelper.h; sourceTree = "<group>"; };
+		5364A7CE19016A2800740203 /* AELevelHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AELevelHelper.m; sourceTree = "<group>"; };
+		5364A7D519016A6600740203 /* AEGameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEGameScene.h; sourceTree = "<group>"; };
+		5364A7D619016A6600740203 /* AEGameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEGameScene.m; sourceTree = "<group>"; };
+		5364A7D719016A6600740203 /* AEStartScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEStartScene.h; sourceTree = "<group>"; };
+		5364A7D819016A6600740203 /* AEStartScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEStartScene.m; sourceTree = "<group>"; };
+		5364A7D919016A6600740203 /* AEScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEScene.h; sourceTree = "<group>"; };
+		5364A7DA19016A6600740203 /* AEScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEScene.m; sourceTree = "<group>"; };
+		5364A7DF19016AA000740203 /* AEWheel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEWheel.h; sourceTree = "<group>"; };
+		5364A7E019016AA000740203 /* AEWheel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEWheel.m; sourceTree = "<group>"; };
+		5364A7E119016AA000740203 /* AERing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AERing.h; sourceTree = "<group>"; };
+		5364A7E219016AA000740203 /* AERing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AERing.m; sourceTree = "<group>"; };
+		5364A7E319016AA000740203 /* AEHistory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEHistory.h; sourceTree = "<group>"; };
+		5364A7E419016AA000740203 /* AEHistory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEHistory.m; sourceTree = "<group>"; };
+		5364A7E519016AA000740203 /* AEHistoryItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEHistoryItem.h; sourceTree = "<group>"; };
+		5364A7E619016AA000740203 /* AEHistoryItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEHistoryItem.m; sourceTree = "<group>"; };
+		5364A7E719016AA000740203 /* AEScore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEScore.h; sourceTree = "<group>"; };
+		5364A7E819016AA000740203 /* AEScore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEScore.m; sourceTree = "<group>"; };
+		5364A7E919016AA000740203 /* AEScoreBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEScoreBar.h; sourceTree = "<group>"; };
+		5364A7EA19016AA000740203 /* AEScoreBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEScoreBar.m; sourceTree = "<group>"; };
+		5364A7F119016F9700740203 /* blop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = blop.mp3; sourceTree = "<group>"; };
+		5364A7F219016F9700740203 /* correct.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = correct.mp3; sourceTree = "<group>"; };
+		5364A7F319016F9700740203 /* tick.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tick.mp3; sourceTree = "<group>"; };
+		5364A7F419016F9700740203 /* wrong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wrong.mp3; sourceTree = "<group>"; };
+		5364A7F519016F9700740203 /* adrenaline.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = adrenaline.mp3; sourceTree = "<group>"; };
+		5364A7FC19016FB000740203 /* pieces.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = pieces.atlas; sourceTree = "<group>"; };
+		53C0966D1909909300920640 /* AEFeedback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEFeedback.h; sourceTree = "<group>"; };
+		53C0966E1909909300920640 /* AEFeedback.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEFeedback.m; sourceTree = "<group>"; };
+		53C09670190D4DA700920640 /* AELevelHelperTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AELevelHelperTests.m; sourceTree = "<group>"; };
+		53F98A80190DCCAD005B1242 /* AETextBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AETextBlock.h; sourceTree = "<group>"; };
+		53F98A81190DCCAD005B1242 /* AETextBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AETextBlock.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5364A77D190168AF00740203 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5364A7C21901695D00740203 /* iAd.framework in Frameworks */,
+				532DC089192B034C0080FF6D /* StoreKit.framework in Frameworks */,
+				5364A786190168AF00740203 /* CoreGraphics.framework in Frameworks */,
+				5364A788190168AF00740203 /* UIKit.framework in Frameworks */,
+				5364A78A190168AF00740203 /* SpriteKit.framework in Frameworks */,
+				5364A784190168AF00740203 /* Foundation.framework in Frameworks */,
+				5364A7C01901691000740203 /* GameKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5364A7A5190168AF00740203 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5364A7AA190168AF00740203 /* XCTest.framework in Frameworks */,
+				5364A7AC190168AF00740203 /* UIKit.framework in Frameworks */,
+				5364A7AB190168AF00740203 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		532DC08C192C44940080FF6D /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				532DC08D192C44C00080FF6D /* AEProductsManager.h */,
+				532DC08E192C44C00080FF6D /* AEProductsManager.m */,
+				532DC090192C456F0080FF6D /* AEPaymentManager.h */,
+				532DC091192C456F0080FF6D /* AEPaymentManager.m */,
+				532DC093192D61A40080FF6D /* AEDefaultsManager.h */,
+				532DC094192D61A40080FF6D /* AEDefaultsManager.m */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		5364A777190168AF00740203 = {
+			isa = PBXGroup;
+			children = (
+				5364A78B190168AF00740203 /* Matchy Matchy */,
+				5364A7AF190168AF00740203 /* Matchy MatchyTests */,
+				5364A782190168AF00740203 /* Frameworks */,
+				5364A781190168AF00740203 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5364A781190168AF00740203 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5364A780190168AF00740203 /* Matchy Matchy.app */,
+				5364A7A8190168AF00740203 /* Matchy MatchyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5364A782190168AF00740203 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				532DC088192B034C0080FF6D /* StoreKit.framework */,
+				5364A7C11901695D00740203 /* iAd.framework */,
+				5364A7BF1901691000740203 /* GameKit.framework */,
+				5364A783190168AF00740203 /* Foundation.framework */,
+				5364A785190168AF00740203 /* CoreGraphics.framework */,
+				5364A787190168AF00740203 /* UIKit.framework */,
+				5364A789190168AF00740203 /* SpriteKit.framework */,
+				5364A7A9190168AF00740203 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5364A78B190168AF00740203 /* Matchy Matchy */ = {
+			isa = PBXGroup;
+			children = (
+				532DC096192D64A40080FF6D /* AEConfig.h */,
+				532DC097192D64A40080FF6D /* AEConfig.m */,
+				5364A7C3190169A100740203 /* Controller */,
+				532DC08C192C44940080FF6D /* Managers */,
+				5364A7C419016A0C00740203 /* Helpers */,
+				5364A7D419016A4C00740203 /* Scenes */,
+				5364A7DE19016A8500740203 /* Sprites */,
+				5364A797190168AF00740203 /* Main.storyboard */,
+				5364A7A2190168AF00740203 /* Images.xcassets */,
+				5364A78C190168AF00740203 /* Supporting Files */,
+			);
+			path = "Matchy Matchy";
+			sourceTree = "<group>";
+		};
+		5364A78C190168AF00740203 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5364A7FC19016FB000740203 /* pieces.atlas */,
+				5364A7FB19016F9E00740203 /* Sounds */,
+				5364A78D190168AF00740203 /* Matchy Matchy-Info.plist */,
+				5364A78E190168AF00740203 /* InfoPlist.strings */,
+				5364A791190168AF00740203 /* main.m */,
+				5364A793190168AF00740203 /* Matchy Matchy-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5364A7AF190168AF00740203 /* Matchy MatchyTests */ = {
+			isa = PBXGroup;
+			children = (
+				53C09670190D4DA700920640 /* AELevelHelperTests.m */,
+				5364A7B0190168AF00740203 /* Supporting Files */,
+			);
+			path = "Matchy MatchyTests";
+			sourceTree = "<group>";
+		};
+		5364A7B0190168AF00740203 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5364A7B1190168AF00740203 /* Matchy MatchyTests-Info.plist */,
+				5364A7B2190168AF00740203 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5364A7C3190169A100740203 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5364A794190168AF00740203 /* AEAppDelegate.h */,
+				5364A795190168AF00740203 /* AEAppDelegate.m */,
+				5364A79A190168AF00740203 /* AEViewController.h */,
+				5364A79B190168AF00740203 /* AEViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		5364A7C419016A0C00740203 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				5364A7C519016A2800740203 /* AERandomHelper.h */,
+				5364A7C619016A2800740203 /* AERandomHelper.m */,
+				5364A7C719016A2800740203 /* AEConstants.h */,
+				5364A7C819016A2800740203 /* AEConstants.m */,
+				5364A7C919016A2800740203 /* AEFeedbackGenerator.h */,
+				5364A7CA19016A2800740203 /* AEFeedbackGenerator.m */,
+				5364A7CB19016A2800740203 /* AEBackgroundMusicPlayer.h */,
+				5364A7CC19016A2800740203 /* AEBackgroundMusicPlayer.m */,
+				5364A7CD19016A2800740203 /* AELevelHelper.h */,
+				5364A7CE19016A2800740203 /* AELevelHelper.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		5364A7D419016A4C00740203 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				5364A7D519016A6600740203 /* AEGameScene.h */,
+				5364A7D619016A6600740203 /* AEGameScene.m */,
+				5364A7D719016A6600740203 /* AEStartScene.h */,
+				5364A7D819016A6600740203 /* AEStartScene.m */,
+				5364A7D919016A6600740203 /* AEScene.h */,
+				5364A7DA19016A6600740203 /* AEScene.m */,
+			);
+			name = Scenes;
+			sourceTree = "<group>";
+		};
+		5364A7DE19016A8500740203 /* Sprites */ = {
+			isa = PBXGroup;
+			children = (
+				535517FE190FF9AB00D73EFB /* AEGraphicNode.h */,
+				535517FF190FF9AB00D73EFB /* AEGraphicNode.m */,
+				5364A7DF19016AA000740203 /* AEWheel.h */,
+				5364A7E019016AA000740203 /* AEWheel.m */,
+				5364A7E119016AA000740203 /* AERing.h */,
+				5364A7E219016AA000740203 /* AERing.m */,
+				5364A7E319016AA000740203 /* AEHistory.h */,
+				5364A7E419016AA000740203 /* AEHistory.m */,
+				5364A7E519016AA000740203 /* AEHistoryItem.h */,
+				5364A7E619016AA000740203 /* AEHistoryItem.m */,
+				5364A7E719016AA000740203 /* AEScore.h */,
+				5364A7E819016AA000740203 /* AEScore.m */,
+				5364A7E919016AA000740203 /* AEScoreBar.h */,
+				5364A7EA19016AA000740203 /* AEScoreBar.m */,
+				53C0966D1909909300920640 /* AEFeedback.h */,
+				53C0966E1909909300920640 /* AEFeedback.m */,
+				53F98A80190DCCAD005B1242 /* AETextBlock.h */,
+				53F98A81190DCCAD005B1242 /* AETextBlock.m */,
+			);
+			name = Sprites;
+			sourceTree = "<group>";
+		};
+		5364A7FB19016F9E00740203 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				5364A7F119016F9700740203 /* blop.mp3 */,
+				5364A7F219016F9700740203 /* correct.mp3 */,
+				5364A7F319016F9700740203 /* tick.mp3 */,
+				5364A7F419016F9700740203 /* wrong.mp3 */,
+				5364A7F519016F9700740203 /* adrenaline.mp3 */,
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5364A77F190168AF00740203 /* Matchy Matchy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5364A7B9190168AF00740203 /* Build configuration list for PBXNativeTarget "Matchy Matchy" */;
+			buildPhases = (
+				5364A77C190168AF00740203 /* Sources */,
+				5364A77D190168AF00740203 /* Frameworks */,
+				5364A77E190168AF00740203 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Matchy Matchy";
+			productName = "Matchy Matchy";
+			productReference = 5364A780190168AF00740203 /* Matchy Matchy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5364A7A7190168AF00740203 /* Matchy MatchyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5364A7BC190168AF00740203 /* Build configuration list for PBXNativeTarget "Matchy MatchyTests" */;
+			buildPhases = (
+				5364A7A4190168AF00740203 /* Sources */,
+				5364A7A5190168AF00740203 /* Frameworks */,
+				5364A7A6190168AF00740203 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5364A7AE190168AF00740203 /* PBXTargetDependency */,
+			);
+			name = "Matchy MatchyTests";
+			productName = "Matchy MatchyTests";
+			productReference = 5364A7A8190168AF00740203 /* Matchy MatchyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5364A778190168AF00740203 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = AE;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Andrew Erickson";
+				TargetAttributes = {
+					5364A77F190168AF00740203 = {
+						DevelopmentTeam = AM7JW84RW4;
+						SystemCapabilities = {
+							com.apple.GameCenter = {
+								enabled = 1;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+						};
+					};
+					5364A7A7190168AF00740203 = {
+						TestTargetID = 5364A77F190168AF00740203;
+					};
+				};
+			};
+			buildConfigurationList = 5364A77B190168AF00740203 /* Build configuration list for PBXProject "Matchy Matchy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5364A777190168AF00740203;
+			productRefGroup = 5364A781190168AF00740203 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5364A77F190168AF00740203 /* Matchy Matchy */,
+				5364A7A7190168AF00740203 /* Matchy MatchyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5364A77E190168AF00740203 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5364A7F719016F9700740203 /* correct.mp3 in Resources */,
+				5364A790190168AF00740203 /* InfoPlist.strings in Resources */,
+				5364A7F919016F9700740203 /* wrong.mp3 in Resources */,
+				5364A7A3190168AF00740203 /* Images.xcassets in Resources */,
+				5364A799190168AF00740203 /* Main.storyboard in Resources */,
+				5364A7F619016F9700740203 /* blop.mp3 in Resources */,
+				5364A7F819016F9700740203 /* tick.mp3 in Resources */,
+				5364A7FD19016FB000740203 /* pieces.atlas in Resources */,
+				5364A7FA19016F9700740203 /* adrenaline.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5364A7A6190168AF00740203 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5364A7B4190168AF00740203 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5364A77C190168AF00740203 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				532DC08F192C44C00080FF6D /* AEProductsManager.m in Sources */,
+				53551800190FF9AB00D73EFB /* AEGraphicNode.m in Sources */,
+				5364A7ED19016AA000740203 /* AEHistory.m in Sources */,
+				5364A7D219016A2800740203 /* AEBackgroundMusicPlayer.m in Sources */,
+				5364A7F019016AA000740203 /* AEScoreBar.m in Sources */,
+				5364A7EC19016AA000740203 /* AERing.m in Sources */,
+				53C0966F1909909300920640 /* AEFeedback.m in Sources */,
+				5364A7CF19016A2800740203 /* AERandomHelper.m in Sources */,
+				5364A796190168AF00740203 /* AEAppDelegate.m in Sources */,
+				5364A7DD19016A6600740203 /* AEScene.m in Sources */,
+				5364A7EF19016AA000740203 /* AEScore.m in Sources */,
+				5364A7DC19016A6600740203 /* AEStartScene.m in Sources */,
+				5364A79C190168AF00740203 /* AEViewController.m in Sources */,
+				5364A7EE19016AA000740203 /* AEHistoryItem.m in Sources */,
+				5364A792190168AF00740203 /* main.m in Sources */,
+				5364A7EB19016AA000740203 /* AEWheel.m in Sources */,
+				532DC092192C456F0080FF6D /* AEPaymentManager.m in Sources */,
+				532DC098192D64A40080FF6D /* AEConfig.m in Sources */,
+				5364A7D019016A2800740203 /* AEConstants.m in Sources */,
+				5364A7D319016A2800740203 /* AELevelHelper.m in Sources */,
+				53F98A82190DCCAD005B1242 /* AETextBlock.m in Sources */,
+				532DC095192D61A40080FF6D /* AEDefaultsManager.m in Sources */,
+				5364A7DB19016A6600740203 /* AEGameScene.m in Sources */,
+				5364A7D119016A2800740203 /* AEFeedbackGenerator.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5364A7A4190168AF00740203 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53C09671190D4DA700920640 /* AELevelHelperTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5364A7AE190168AF00740203 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5364A77F190168AF00740203 /* Matchy Matchy */;
+			targetProxy = 5364A7AD190168AF00740203 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5364A78E190168AF00740203 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5364A78F190168AF00740203 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5364A797190168AF00740203 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5364A798190168AF00740203 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5364A7B2190168AF00740203 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5364A7B3190168AF00740203 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5364A7B7190168AF00740203 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5364A7B8190168AF00740203 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5364A7BA190168AF00740203 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Matchy Matchy/Matchy Matchy-Prefix.pch";
+				INFOPLIST_FILE = "Matchy Matchy/Matchy Matchy-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5364A7BB190168AF00740203 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Matchy Matchy/Matchy Matchy-Prefix.pch";
+				INFOPLIST_FILE = "Matchy Matchy/Matchy Matchy-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		5364A7BD190168AF00740203 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Matchy Matchy.app/Matchy Matchy";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Matchy Matchy/Matchy Matchy-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Matchy MatchyTests/Matchy MatchyTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		5364A7BE190168AF00740203 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Matchy Matchy.app/Matchy Matchy";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Matchy Matchy/Matchy Matchy-Prefix.pch";
+				INFOPLIST_FILE = "Matchy MatchyTests/Matchy MatchyTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5364A77B190168AF00740203 /* Build configuration list for PBXProject "Matchy Matchy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5364A7B7190168AF00740203 /* Debug */,
+				5364A7B8190168AF00740203 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5364A7B9190168AF00740203 /* Build configuration list for PBXNativeTarget "Matchy Matchy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5364A7BA190168AF00740203 /* Debug */,
+				5364A7BB190168AF00740203 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5364A7BC190168AF00740203 /* Build configuration list for PBXNativeTarget "Matchy MatchyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5364A7BD190168AF00740203 /* Debug */,
+				5364A7BE190168AF00740203 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5364A778190168AF00740203 /* Project object */;
+}
